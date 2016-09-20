@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/tir4y/alurapic#readme",
   "dependencies": {
+    "consign": "^0.1.2",
     "express": "^4.14.0",
     "http": "0.0.0"
   }
