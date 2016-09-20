@@ -1,0 +1,24 @@
+{
+  "name": "alurapic",
+  "version": "1.0.0",
+  "description": "A alurapic project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tir4y/alurapic.git"
+  },
+  "author": "Luiz Henrique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tir4y/alurapic/issues"
+  },
+  "homepage": "https://github.com/tir4y/alurapic#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "http": "0.0.0"
+  }
+}
