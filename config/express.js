@@ -9,7 +9,7 @@ var mysql = require('mysql');
 app.use(express.static('./public'));
 
 app.use(bodyParser.json());
-
+/*
 app.use(
     connection(mysql,{
         host: 'STRAWBERRY.arvixe.com',
@@ -18,7 +18,7 @@ app.use(
         port : 3306, //port mysql
         database:'tasks'
     },'request')
-);
+);*/
 
 consign({ cwd: 'app' })
     .include('api')
