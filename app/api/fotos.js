@@ -7,7 +7,13 @@ var contador = 2;
 
 api.lista = function(req, res){
 
-    res.json(fotos);
+    req.getConnection(function(err,connection){
+		connection.query('SELECT * FROM pictures',[],function(err,result){
+			if(err) return res.status(400).json();
+
+			return res.status(200).json(result);
+		});
+	});
 };
 
 api.buscaPorId = function(req, res) {
