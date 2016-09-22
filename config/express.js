@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var connection  = require('express-myconnection');
 var mysql = require('mysql');
 
+app.set('secret', 'tir4y!@#$');
 //Módulo de configuração do express
 app.use(express.static('./public'));
 
@@ -23,6 +24,7 @@ app.use(
 consign({ cwd: 'app' })
     .include('models')
     .then('api')
+    .then('routes/auth.js')
     .then('routes')
     .into(app);
 

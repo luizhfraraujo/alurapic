@@ -23,6 +23,7 @@
     "express": "^4.14.0",
     "express-myconnection": "^1.0.4",
     "http": "0.0.0",
+    "jsonwebtoken": "^7.1.9",
     "mongoose": "^4.6.1",
     "mysql": "^2.11.1"
   }
