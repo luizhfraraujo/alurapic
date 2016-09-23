@@ -30,7 +30,8 @@ module.exports = function(app) {
         var token = req.headers['x-access-token'];
         if(token){
             console.log('Verificando Token...');
-            jwt.verify(token, app.get['secret'], function(err, decoded) {
+            jwt.verify(token, app.get('secret'), function(err, decoded) {
+                console.log(token);
                 if(err) {
                     console.log('Token rejeitado');
                     res.sendStatus(401);
